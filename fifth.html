@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+	<title>Array And Object</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var myhouse = new Object ();
+		myhouse.length = 50;
+		myhouse.width = 30;
+		myhouse.area = function () {
+			return this.length * this.width
+		}
+
+		var yourHouse = {
+			length : 56,
+			width : 76,
+			area : function () {
+				return this.length * this.width
+			}
+			};
+
+		document.write(yourHouse.area());
+	</script>
+</body>
+</html>

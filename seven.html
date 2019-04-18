@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>for in loop</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var person = function(name,age,job, city) {
+			 this.name= name;
+			 this.age= age;
+			 this.job= job;
+			 this.city= city;
+		};
+		var ram = new person ('Ram',45,'entrepreneur','gwalior');
+		var bittu = new person ('bittu',23,'intern','kolkata');
+		var govind = new person ('govind',32,'hr','indore');
+
+
+		for(var property in ram){
+			document.write(property+": "+ram[property]+"<br/>");
+		}
+
+
+	</script>
+</body>
+</html>

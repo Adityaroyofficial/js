@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>class</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var person = function(name,age,job, city) {
+			 this.nam= name;
+			 this.umr= age;
+			 this.kam= job;
+			 this.ilaka= city;
+		};
+		var ram = new person ('Ram',45,'entrepreneur','gwalior');
+		var bittu = new person ('bittu',23,'intern','kolkata');
+		var govind = new person ('govind',32,'hr','indore');
+
+		function agediffrence(a,b){
+			var diff=a.umr-b.umr
+			document.write(diff)
+		}
+
+		agediffrence(govind,bittu);
+
+	</script>
+</body>
+</html>
